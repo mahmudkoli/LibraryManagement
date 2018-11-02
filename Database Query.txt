@@ -1,0 +1,12 @@
+Create procedure spDynamicTableColumnName
+(
+	@tableName nvarchar(100),
+	@columnName nvarchar(50),
+	@value nvarchar(50)
+)
+As
+Begin
+	Declare @sql nvarchar(max);
+    Set @sql = 'select * from ' + quotename(@tableName) + ' where ' + quotename(@columnName) + ' = ' + quotename(@value);
+    Execute sp_executesql @sql;
+End

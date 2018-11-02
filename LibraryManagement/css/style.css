@@ -1,0 +1,25 @@
+﻿body {
+    
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.mouseHover:hover {
+    cursor: pointer;
+}
+
+.LoginBackground {
+    background-color: #DDFFDD;
+    padding: 15px;
+}
+
+.LoginWelcome {
+    padding: 15px;
+    color: #293955;
+    margin: 20px 0;
+    text-align: center;
+}
+
+
